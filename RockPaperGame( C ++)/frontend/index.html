@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <!-- Connect CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">Play against the computer!</p>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <div class="score-box">
+                <h3>You</h3>
+                <p id="user-score">0</p>
+            </div>
+
+            <div class="score-box">
+                <h3>Computer</h3>
+                <p id="computer-score">0</p>
+            </div>
+
+            <div class="score-box">
+                <h3>Draws</h3>
+                <p id="draw-score">0</p>
+            </div>
+        </div>
+
+        <!-- Game choices -->
+        <h2>Choose Your Move</h2>
+
+        <div class="choices">
+            <button class="choice-btn" data-choice="rock">
+                ✊ Rock
+            </button>
+
+            <button class="choice-btn" data-choice="paper">
+                ✋ Paper
+            </button>
+
+            <button class="choice-btn" data-choice="scissors">
+                ✌️ Scissors
+            </button>
+        </div>
+
+        <!-- Results -->
+        <div class="result-box">
+            <p id="user-choice">Your choice: -</p>
+            <p id="computer-choice">Computer choice: -</p>
+            <h2 id="result">Make your move!</h2>
+        </div>
+
+        <!-- Game controls -->
+        <button id="reset-btn">Reset Score</button>
+
+        <p id="status"></p>
+
+    </div>
+
+    <!-- Connect JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
